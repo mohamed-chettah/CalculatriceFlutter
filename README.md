@@ -4,16 +4,6 @@ Ce projet est une simple calculatrice développée avec **Flutter**. Elle permet
 
 ---
 
-## **Sommaire**
-1. [Fonctionnalités](#fonctionnalités)
-2. [Installation et Lancement](#installation-et-lancement)
-3. [Architecture du Projet](#architecture-du-projet)
-4. [Captures d’Écran](#captures-décran)
-5. [Améliorations Possibles](#améliorations-possibles)
-6. [Auteurs / Contributeurs](#auteurs--contributeurs)
-
----
-
 ## **Fonctionnalités**
 - **Opérations de base** : +, -, *, /
 - **Saisie des chiffres** : 0 à 9 (incluant un éventuel point décimal)
