@@ -14,33 +14,33 @@ Ce projet est une simple calculatrice développée avec **Flutter**. Elle permet
 
 ---
 
-## Choix Techniques
+# Choix Techniques
 
-# 1. Framework & Langage  
+## 1. Framework & Langage  
 - Utilisation de **Flutter** pour son efficacité dans le développement d’interfaces fluides et responsives.  
 - **Dart** comme langage de programmation, bien adapté à la réactivité et à la gestion d’état.  
 
-# 2. Architecture  
+## 2. Architecture  
 - **StatefulWidget** pour gérer dynamiquement l'affichage et l'état de la calculatrice.  
 - **setState()** utilisé pour mettre à jour l'affichage en fonction des entrées utilisateur.  
 
-# 3. Gestion des Opérations  
+## 3. Gestion des Opérations  
 - Stockage de l’expression mathématique sous forme de chaîne de caractères.  
 - **Package `math_expressions`** pour évaluer l’expression et éviter d’écrire un parseur manuel.  
 
 ---
 
-## Difficultés rencontrées et solutions  
+# Difficultés rencontrées et solutions  
 
-# 1. Gestion de l'affichage dynamique  
+## 1. Gestion de l'affichage dynamique  
 - **Problème :** Lors de la saisie des chiffres et opérations, l’écran ne se mettait pas à jour correctement.  
 - **Solution :** Ajout d’un `setState()` après chaque mise à jour de l’expression pour forcer la reconstruction du widget.  
 
-# 2. Évaluation des expressions mathématiques  
+## 2. Évaluation des expressions mathématiques  
 - **Problème :** Le calcul avec `eval()` sur une chaîne entraînait des erreurs de syntaxe.  
 - **Solution :** Utilisation de **`math_expressions`**, qui convertit la chaîne en arbre d’expressions mathématiques avant l’évaluation.  
 
-# 3. Disposition des boutons  
+## 3. Disposition des boutons  
 - **Problème :** L’interface n’était pas bien adaptée à différentes tailles d’écran.  
 - **Solution :** Utilisation de **`Flexible` & `GridView.builder`** pour que la disposition des boutons s’adapte dynamiquement.
 
